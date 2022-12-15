@@ -13,7 +13,7 @@ const checkUsersCredentials = async (email, password) => {
         } 
         return null
     } catch (error) {
-        return error
+        return null
     }
 }
 
@@ -26,9 +26,10 @@ const createRecoveryToken = async (email) => {
         })
         return data
     } catch (error) {
-        return error
+        return null
     } 
-} 
+}
+
 
 
 module.exports = {
